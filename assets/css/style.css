@@ -1,0 +1,178 @@
+:root{--main:#2c3e50;}
+html{overflow-x: hidden;}
+html::-webkit-scrollbar-thumb {
+    background: var(--main);
+}
+html::-webkit-scrollbar {
+    background-color: #fff;
+    width: 5px;
+    height: 5px;
+    border: none!important
+}
+/*Formulário*/
+form, h1 {
+    width: 600px;
+    margin: auto;
+    text-align: center;
+}
+form .row {justify-content: space-between;}
+form input, form button {
+    border: solid 2px var(--main);
+    border-radius: 5px;
+}
+.row input {
+    display: block;
+    margin-bottom: 10px;
+    width: 49%;
+}
+input {outline: 0;}
+button#btnEnvio:hover {filter: brightness(1.5);}
+button#btnEnvio {
+    border: none;
+    width: 49%;
+    height: 38px;
+    background: var(--main);
+    color: #fff;
+    transition:all ease-in-out 0.35s;
+}
+section.sti {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+#mensagem {
+    color: green;
+    font-family: 'Yantramanav';
+    font-size: 16px;
+}
+/*Painel*/
+section.sti {
+    background-image: url(../img/bg-principal.png);
+    background-size: cover;
+}
+.sti h1 {
+    color: var(--main);
+    margin-bottom: 40px !important;
+    font-weight: 700;
+    font-family: 'Yantramanav', sans-serif;
+}
+.cotainer-fluid {
+    background: #fff;
+    width: 720px;
+    padding: 50px 0;
+    border-radius: 10px;
+}
+.cotainer-fluid::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    left: 92.5%;
+    margin-bottom: -46px;
+    border-right: solid 5px var(--main);
+    border-bottom: solid 5px var(--main);
+    border-radius: 0 0px 10px 0;
+    z-index: 0;
+}
+.cotainer-fluid::before {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    right: -4px;
+    margin-top: -46px;
+    border-left: solid 5px var(--main);
+    border-top: solid 5px var(--main);
+    border-radius: 10px 0 0 0;
+    z-index: 0;
+}
+span.consulta, span.consulta a {
+    display: block;
+    font-family: 'Yantramanav';
+    text-decoration: none !important;
+    font-size: 16px;
+    width: 625px;
+    margin: 10px auto -10px;
+    text-align: left;
+    color: var(--main);
+}
+/*Consulta*/
+section.consulta{height: max-content !important; padding:35px 0;min-height: 100vh;}
+.consulta form, form.form2 {width: auto;}
+.consulta input {
+    border: none !important;
+    width: 100%;
+}
+.row-resultado .linha {
+    max-width: 50%;
+}
+.resultado .linha, .row-resultado  {
+    width: 400px;
+    display: flex;
+    margin: auto;
+}
+.linha strong {
+    text-align: initial;
+    padding: 0px 5px;
+    border-right: solid 1px;
+    background: var(--main);
+    color: #fff;
+    font-weight: 400 !important;
+    min-width: 64px;
+}
+strong.max-content {min-width: max-content !important;}
+.linha {
+    font-family: 'Yantramanav';
+    color: #000;
+    border: solid 2px var(--main);
+    border-radius: 10px;
+    margin: 2px auto !important;
+    overflow: hidden;
+    height: 27px;
+}
+legend {
+	background: #fff;
+    position: relative;
+    padding: 0 5px !important;
+    margin-top: -15px;
+    margin-left: -6px;
+    margin-bottom: 20px !important;
+    float: unset !important;
+    width: unset !important;
+    font-size: unset !important;
+    line-height: unset !important;
+}
+legend, span.linha.placa {
+    width: max-content !important;
+}
+fieldset {
+    width: 440px;
+    padding: 0 20px !important;
+    border: solid 1px !important;
+    margin: auto  !important;
+}
+button[name="btn_envio"] {
+    width: 100%;
+}
+button[value="update"] {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+button[value="delete"] {
+    margin-bottom: 20px;
+}
+span.linha.placa input {
+    width: 78px;
+    padding: 0 3px;
+}
+.resultado fieldset {
+    margin: 40px auto !important;
+}
+
+.resultado fieldset:nth-child(2) {
+    margin-top: 0px !important;
+}
